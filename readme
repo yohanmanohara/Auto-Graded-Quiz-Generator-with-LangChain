@@ -1,0 +1,55 @@
+# Auto-Graded Quiz Generator with Ollama
+
+![Project Banner](https://via.placeholder.com/800x200?text=Auto-Graded+Quiz+Generator)
+
+An AI-powered application that generates quizzes from textbooks/notes and automatically grades responses using Ollama's local LLMs.
+
+## Features
+
+- 📄 Extract text from PDF documents
+- ❓ Generate 20 quiz questions (15 MCQs + 5 True/False) with explanations
+- ✅ Auto-grade user responses with detailed feedback
+- 🏠 Runs locally with Ollama (no API keys needed)
+- 💾 Save/Load quizzes in JSON format
+- 🌐 Streamlit web interface
+
+## Tech Stack
+
+- **Backend**: Python, Flask
+- **Frontend**: Streamlit
+- **AI**: Ollama (Llama 3/Mistral), LangChain
+- **PDF Processing**: PyPDF2
+
+## Prerequisites
+
+- Python 3.8+
+- Ollama installed ([installation guide](https://ollama.ai/))
+- At least one Ollama model (e.g., `llama3`)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/quiz-generator.git
+   cd quiz-generator
+
+
+
+
+
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+venv\Scripts\activate    # Windows
+
+pip install -r requirements.txt
+
+
+
+ollama pull llama3
+
+
+
+python app.py
+
+streamlit run frontend.py
